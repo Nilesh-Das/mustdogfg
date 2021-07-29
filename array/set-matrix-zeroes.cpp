@@ -36,8 +36,8 @@ int main() {
   vector<vector<int>> matrix;
   matrix = {{1,1,1},{1,0,1},{1,1,1}};
   setZeroes(matrix);
-  for(int x : matrix) {
-    for(int y : x) {
+  for(auto x : matrix) {
+    for(auto y : x) {
       cout << y << ' ';
     }
     cout << '\n';
