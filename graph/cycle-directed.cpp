@@ -14,7 +14,8 @@ bool dfs(int u) {
 			par[v] = u;
 			if(dfs(v)) return true;
 		}
-		if(mark[v] == 1) {
+		else if(mark[v] == 1) {
+			cycle = true;
 			return true;
 		}
 	}
