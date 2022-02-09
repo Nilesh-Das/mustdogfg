@@ -33,7 +33,7 @@ int binSearch(vector<int>& a, int k) {
         if(a[m] < k) l = m + 1;
         else r = m;
     }
-    return (a[l] == k ? l : -1);
+    return (l < a.size() && a[l] == k ? l : -1);
 }
 
 int main() {
